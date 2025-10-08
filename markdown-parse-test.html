@@ -35,7 +35,7 @@
     const output = document.getElementById('output');
 
     input.addEventListener('input', () => {
-      output.innerHTML = marked.parse(input.value);
+      output.innerHTML = marked.parse(input.value); // scriptタグは現時点動いていないが、安全性は未検証
     });
   </script>
 </body>

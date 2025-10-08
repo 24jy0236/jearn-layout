@@ -26,38 +26,41 @@
       top: 0;
       display: flex;
       justify-content: space-between;
+      gap: 16px;
 
       .header-left {
         display: flex;
+
+        .header-title {
+          font-size: 1.2rem;
+        }
+
+        .header-button {
+          width: 80px;
+          text-align: center;
+          border-right: 1px solid #8ff;
+          border-left: 1px solid #8ff;
+        }
+
+        .header-button:hover {
+          background-color: #DDD;
+        }
+
+        .header-graph {
+          img {
+            height: var(--header-height);
+          }
+        }
       }
 
       .header-right {
         display: flex;
-      }
 
-      .header-title {
-        font-size: 1.2rem;
-      }
-
-      .header-button {
-        width: 80px;
-        text-align: center;
-      }
-
-      .header-button:hover {
-        background-color: #DDD;
-      }
-
-      .header-graph {
-        img {
-          height: var(--header-height);
+        .header-search {
+          border: 1px solid gray;
+          border-radius: 16px;
+          padding: 2px 20px;
         }
-      }
-
-      .header-search {
-        border: 1px solid gray;
-        border-radius: 16px;
-        padding: 2px 20px;
       }
     }
 
@@ -79,7 +82,7 @@
       position: sticky;
       top: var(--header-height);
       height: calc(100vh - var(--header-height));
-      
+
     }
 
     @media screen and (max-width:600px) {
@@ -96,7 +99,7 @@
     <div class="header-left">
       <div class="header-title">Jearn Title</div>
       <div class="header-button header-graph">
-        <img src="./graph.png" alt="">
+        <img src="./images/graph.png" alt="">
       </div>
       <div class="header-search">Search...</div>
     </div>

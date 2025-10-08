@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リアルタイムMarkdownプレビュー</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+    }
+
+    #input {
+      flex: 1;
+      height: 100vh;
+    }
+
+    #output {
+      flex: 1;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <textarea name="" id="input"></textarea>
+  <div id="output"></div>
+
+  <script>
+    const input = document.getElementById('input');
+    const output = document.getElementById('output');
+
+    input.addEventListener('input', () => {
+      output.innerHTML = marked.parse(input.value);
+    });
+  </script>
+</body>
+
+</html>

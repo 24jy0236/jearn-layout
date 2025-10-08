@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    :root {
+      --header-height: 50px;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      border: 1px solid #8ff;
+      background-color: #fff;
+      height: var(--header-height);
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+
+      .header-left {
+        display: flex;
+      }
+
+      .header-right {
+        display: flex;
+      }
+
+      .header-title {
+        font-size: 1.2rem;
+      }
+
+      .header-button {
+        width: 80px;
+        text-align: center;
+      }
+
+      .header-button:hover {
+        background-color: #DDD;
+      }
+
+      .header-graph {
+        img {
+          height: var(--header-height);
+        }
+      }
+
+      .header-search {
+        border: 1px solid gray;
+        border-radius: 16px;
+        padding: 2px 20px;
+      }
+    }
+
+    #container {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+    }
+
+    main {
+      flex: 4;
+      border: 1px solid #8ff;
+    }
+
+    aside {
+      flex: 1;
+      border: 1px solid #8ff;
+      background-color: #EEE;
+      position: sticky;
+      top: var(--header-height);
+      height: calc(100vh - var(--header-height));
+      
+    }
+
+    @media screen and (max-width:600px) {
+      aside {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-left">
+      <div class="header-title">Jearn Title</div>
+      <div class="header-button header-graph">
+        <img src="./graph.png" alt="">
+      </div>
+      <div class="header-search">Search...</div>
+    </div>
+    <div class="header-right">
+      <div class="header-user">人</div>
+    </div>
+  </header>
+
+  <div id="container">
+
+    <aside>
+      sidebar 1
+
+      <button>
+        新しい投稿
+      </button>
+      <button>
+        新しい質問
+      </button>
+
+      <div class="side-categories">
+        カテゴリ1
+      </div>
+      <div class="side-categories">
+        カテゴリ2
+      </div>
+      <div class="side-categories">
+        カテゴリ3
+      </div>
+    </aside>
+
+    <main>
+      main content
+      <br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora quam voluptatibus ipsa id. Debitis minima
+      perferendis veritatis possimus, in sequi, expedita impedit maiores illum iure nemo, tenetur dicta nam.
+      <br><br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, pariatur ducimus aperiam eos est ullam omnis,
+      natus asperiores sit error beatae! Deserunt, libero praesentium! Nostrum soluta iste exercitationem quae
+      temporibus?
+      <br><br>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quibusdam, corrupti dolore amet velit id laudantium
+      ex animi necessitatibus libero. Eaque itaque harum officia quia explicabo quaerat, ullam eos ipsum?
+      <br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa dolor sunt eos amet reprehenderit
+      deleniti minus quos quas aliquam quae hic, facilis mollitia? Sint consequuntur iste expedita fugiat praesentium?
+      <br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora quam voluptatibus ipsa id. Debitis minima
+      perferendis veritatis possimus, in sequi, expedita impedit maiores illum iure nemo, tenetur dicta nam.
+      <br><br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, pariatur ducimus aperiam eos est ullam omnis,
+      natus asperiores sit error beatae! Deserunt, libero praesentium! Nostrum soluta iste exercitationem quae
+      temporibus?
+      <br><br>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quibusdam, corrupti dolore amet velit id laudantium
+      ex animi necessitatibus libero. Eaque itaque harum officia quia explicabo quaerat, ullam eos ipsum?
+      <br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa dolor sunt eos amet reprehenderit
+      deleniti minus quos quas aliquam quae hic, facilis mollitia? Sint consequuntur iste expedita fugiat praesentium?
+      <br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora quam voluptatibus ipsa id. Debitis minima
+      perferendis veritatis possimus, in sequi, expedita impedit maiores illum iure nemo, tenetur dicta nam.
+      <br><br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, pariatur ducimus aperiam eos est ullam omnis,
+      natus asperiores sit error beatae! Deserunt, libero praesentium! Nostrum soluta iste exercitationem quae
+      temporibus?
+      <br><br>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quibusdam, corrupti dolore amet velit id laudantium
+      ex animi necessitatibus libero. Eaque itaque harum officia quia explicabo quaerat, ullam eos ipsum?
+      <br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa dolor sunt eos amet reprehenderit
+      deleniti minus quos quas aliquam quae hic, facilis mollitia? Sint consequuntur iste expedita fugiat praesentium?
+      <br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora quam voluptatibus ipsa id. Debitis minima
+      perferendis veritatis possimus, in sequi, expedita impedit maiores illum iure nemo, tenetur dicta nam.
+      <br><br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, pariatur ducimus aperiam eos est ullam omnis,
+      natus asperiores sit error beatae! Deserunt, libero praesentium! Nostrum soluta iste exercitationem quae
+      temporibus?
+      <br><br>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quibusdam, corrupti dolore amet velit id laudantium
+      ex animi necessitatibus libero. Eaque itaque harum officia quia explicabo quaerat, ullam eos ipsum?
+      <br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa dolor sunt eos amet reprehenderit
+      deleniti minus quos quas aliquam quae hic, facilis mollitia? Sint consequuntur iste expedita fugiat praesentium?
+      <br><br>
+    </main>
+
+    <aside>
+      sidebar 2
+    </aside>
+
+  </div>
+
+</body>
+
+</html>
